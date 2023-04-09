@@ -14,21 +14,5 @@
   
 
    export function squatGains(age, restingHeartRate, squattingHeartRate) {
-    const maxHeartRate = 220 - age;
-    const heartRateReserve = maxHeartRate - restingHeartRate;
-    const intensityPercentage = (squattingHeartRate - restingHeartRate) / heartRateReserve * 100;
-  
-    if (intensityPercentage <= 50) {
-      return "Not exercise";
-    } else if (intensityPercentage <= 75) {
-      return "Fat burn";
-    } else if (intensityPercentage <= 85) {
-      return "Aerobic endurance";
-    } else {
-      return "Anaerobic threshold";
-    }
+    
 }
-
-const heartRateZone = squatGains(40, 70, 150);
-console.log(heartRateZone); 
-console.log("hi")
